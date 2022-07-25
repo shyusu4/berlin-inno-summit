@@ -1,0 +1,151 @@
+/* base styles */
+@import url("http://fonts.cdnfonts.com/css/cocogoose");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+}
+
+:root {
+  --color-1: #272a31;
+  --color-2: #ec5242;
+  --color-3: #d3d3d3;
+  --white: #fff;
+  --black: #000;
+}
+
+/* mobile styles */
+.secondary-nav {
+  display: none;
+}
+
+header {
+  width: 100%;
+  top: 0;
+  left: 0;
+  z-index: 1;
+}
+
+.logo {
+  max-height: auto;
+  max-width: 12rem;
+}
+
+.menu {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.primary-nav__mobile {
+  display: flex;
+  justify-content: space-between;
+  padding: 5%;
+  box-shadow: 0 4px 4px -4px rgba(0, 0, 0, 30%);
+}
+
+.primary-nav__items {
+  display: none;
+  list-style: none;
+}
+
+.primary-nav__item a {
+  text-decoration: none;
+}
+
+.main-section {
+  padding: 10% 4% 5% 4%;
+  background-image: url(imgs/mobile-background.png);
+  background-repeat: no-repeat;
+  background-size: 100% auto;
+}
+
+.main-section__title {
+  font-family: "COCOGOOSE", sans-serif;
+  font-size: 3rem;
+  background: linear-gradient(to right, #ff8800f5 0%, #ec5242 100%);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.main-section__quote {
+  font-size: 1rem;
+  color: var(--color-2);
+}
+
+.main-section__description {
+  background-color: #f4f4f4;
+  border: 5px solid var(--white);
+  width: 20rem;
+  margin-bottom: 2rem;
+}
+
+.description {
+  font-size: 14px;
+  padding: 7px;
+}
+
+.date {
+  font-family: "COCOGOOSE", sans-serif;
+  font-size: 1.5rem;
+  color: gray;
+  margin-bottom: 0;
+}
+
+.place {
+  color: gray;
+  font-size: 1rem;
+}
+
+/* desktop styles */
+@media screen and (min-width: 768px) {
+  .logo {
+    max-height: auto;
+    max-width: 10rem;
+  }
+
+  .icon {
+    color: var(--white);
+  }
+
+  .secondary-nav {
+    display: block;
+    background-color: var(--black);
+    width: 100%;
+  }
+
+  .secondary-nav__items {
+    display: flex;
+    flex-direction: row-reverse;
+    list-style: none;
+    gap: 2rem;
+    margin-right: 10%;
+  }
+
+  .secondary-nav__item a {
+    text-decoration: none;
+    color: var(--white);
+  }
+
+  .primary-nav {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  .primary-nav__items {
+    display: flex;
+    list-style: none;
+    gap: 2rem;
+    margin-right: 10%;
+  }
+
+  .primary-nav__item a {
+    text-decoration: none;
+    color: var(--black);
+  }
+}
