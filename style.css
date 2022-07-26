@@ -12,12 +12,17 @@
   --color-1: #272a31;
   --color-2: #ec5242;
   --color-3: #d3d3d3;
+  --color-4: #575757;
   --white: #fff;
   --black: #000;
 }
 
 /* mobile styles */
 .secondary-nav {
+  display: none;
+}
+
+.primary-nav__btn {
   display: none;
 }
 
@@ -43,7 +48,6 @@ header {
   display: flex;
   justify-content: space-between;
   padding: 5%;
-  box-shadow: 0 4px 4px -4px rgba(0, 0, 0, 30%);
 }
 
 .primary-nav__items {
@@ -91,13 +95,19 @@ header {
 .date {
   font-family: "COCOGOOSE", sans-serif;
   font-size: 1.5rem;
-  color: gray;
+  color: var(--color-4);
   margin-bottom: 0;
 }
 
 .place {
-  color: gray;
+  color: var(--color-4);
   font-size: 1rem;
+}
+
+.line {
+  width: 60px;
+  border-bottom: 1px solid var(--color-2);
+  margin: 0 auto 40px;
 }
 
 .main-program {
@@ -114,12 +124,6 @@ header {
   color: var(--white);
   margin: 0;
   font-size: 15px;
-}
-
-.main-program__line {
-  width: 60px;
-  border-bottom: 1px solid var(--color-2);
-  margin: 0 auto 40px;
 }
 
 .main-program__cards {
@@ -165,6 +169,37 @@ header {
   text-decoration: none;
 }
 
+.featured-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 2rem 0.5rem 0 0.5rem;
+}
+
+.featured-speaker {
+  padding-bottom: 1rem;
+}
+
+.featured-speaker__img {
+  float: left;
+  max-height: auto;
+  max-width: 10rem;
+}
+
+.fs-title {
+  font-weight: bold;
+}
+
+.fs-role {
+  color: var(--color-2);
+  font-size: 14px;
+  font-weight: 700;
+  line-height: 1;
+  font-style: italic;
+  position: relative;
+  padding-bottom: 1.2rem;
+}
+
 /* desktop styles */
 @media screen and (min-width: 768px) {
   .logo {
@@ -172,8 +207,8 @@ header {
     max-width: 10rem;
   }
 
-  .icon {
-    color: var(--white);
+  .menu {
+    display: none;
   }
 
   .secondary-nav {
@@ -200,17 +235,51 @@ header {
     flex-direction: row;
     align-items: center;
     justify-content: space-between;
+    height: 5rem;
   }
 
   .primary-nav__items {
     display: flex;
     list-style: none;
     gap: 2rem;
-    margin-right: 10%;
   }
 
   .primary-nav__item a {
     text-decoration: none;
     color: var(--black);
+  }
+
+  .primary-nav__btn {
+    display: flex;
+    border: 5px solid var(--color-2);
+    color: var(--color-2);
+    padding: 10px;
+    margin-right: 20px;
+  }
+
+  .main-section {
+    background-image: url(imgs/background.png);
+    padding: 5% 5% 5% 10%;
+    height: 90vh;
+  }
+
+  .main-section__title {
+    font-size: 5rem;
+  }
+
+  .main-section__quote {
+    font-size: 2rem;
+  }
+
+  .main-section__description {
+    width: 35rem;
+  }
+
+  .description {
+    font-size: 1.1rem;
+  }
+
+  .date {
+    font-size: 2rem;
   }
 }
