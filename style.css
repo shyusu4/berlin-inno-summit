@@ -64,6 +64,7 @@ header {
   background-image: url(imgs/mobile-background.png);
   background-repeat: no-repeat;
   background-size: 100% auto;
+  overflow-x: hidden;
 }
 
 .main-section__title {
@@ -84,12 +85,12 @@ header {
   background-color: #f4f4f4;
   border: 5px solid var(--white);
   width: 20rem;
-  margin-bottom: 2rem;
+  margin-bottom: 1.5rem;
 }
 
 .description {
   font-size: 14px;
-  padding: 7px;
+  padding: 6px;
 }
 
 .date {
@@ -182,6 +183,7 @@ header {
 
 .featured-speaker__img {
   float: left;
+  padding-right: 1rem;
   max-height: auto;
   max-width: 10rem;
 }
@@ -197,14 +199,57 @@ header {
   line-height: 1;
   font-style: italic;
   position: relative;
-  padding-bottom: 1.2rem;
+}
+
+.fs-description {
+  font-size: 13px;
+}
+
+.partners {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: #272a31;
+  padding-top: 1rem;
+}
+
+.partners__title {
+  color: var(--white);
+}
+
+.partners-content__box {
+  padding-bottom: 3rem;
+}
+
+.partners-content__img {
+  max-width: 10rem;
+}
+
+.footer {
+  background-color: var(--white);
+  color: #000;
+  display: flex;
+  align-items: center;
+  margin-top: 25px;
+  margin-bottom: 25px;
+  gap: 10px;
+}
+
+.footer-logo {
+  max-width: 10rem;
+  padding-left: 5%;
+}
+
+.copyright {
+  display: none;
 }
 
 /* desktop styles */
 @media screen and (min-width: 768px) {
   .logo {
     max-height: auto;
-    max-width: 10rem;
+    max-width: 12rem;
   }
 
   .menu {
