@@ -1,5 +1,5 @@
 /* dynamic cards */
-const featuredSpeakersArr = [
+const featuredSpeakersArr1 = [
   {
     id: 1,
     title: 'Dr. John C. Mather',
@@ -27,6 +27,31 @@ const featuredSpeakersArr = [
     description:
       'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Doneceuismod, nisl eget consectetur sagittis.',
   },
+];
+
+const featuredSpeakers = document.querySelector('.featured-speakers__col-1');
+
+for (let i = 0; i < featuredSpeakersArr1.length; i += 1) {
+  const speaker = featuredSpeakersArr1[i];
+
+  const feature = document.createElement('div');
+  feature.classList.add('featured-speaker');
+  feature.innerHTML = `<div class="featured-speaker__item">
+  <img class="featured-speaker__img" src="${speaker.img}" alt="${speaker.imgAlt}/>
+  <div class="featured-speaker__info">
+    <h4 class="fs-title">${speaker.title}</h4>
+    <span class="fs-role">${speaker.role}</span>
+    <hr>
+    <p class="fs-description">
+    ${speaker.description}
+    </p>
+  </div>
+</div>
+  `;
+  featuredSpeakers.appendChild(feature);
+}
+
+const featuredSpeakersArr2 = [
   {
     id: 4,
     title: 'Cristina Mata Yandiola',
@@ -56,10 +81,10 @@ const featuredSpeakersArr = [
   },
 ];
 
-const featuredSpeakers = document.querySelector('.featured-content');
+const featuredSpeakers2 = document.querySelector('.featured-speakers__col-2');
 
-for (let i = 0; i < featuredSpeakersArr.length; i += 1) {
-  const speaker = featuredSpeakersArr[i];
+for (let i = 0; i < featuredSpeakersArr2.length; i += 1) {
+  const speaker = featuredSpeakersArr2[i];
 
   const feature = document.createElement('div');
   feature.classList.add('featured-speaker');
@@ -67,13 +92,13 @@ for (let i = 0; i < featuredSpeakersArr.length; i += 1) {
   <img class="featured-speaker__img" src="${speaker.img}" alt="${speaker.imgAlt}/>
   <div class="featured-speaker__info">
     <h4 class="fs-title">${speaker.title}</h4>
-    <span class="fs-role">Nobel Prize Physics 2016</span>
+    <span class="fs-role">${speaker.role}</span>
+    <hr>
     <p class="fs-description">
-      Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec
-      euismod, nisl eget consectetur sagittis.
+    ${speaker.description}
     </p>
   </div>
 </div>
   `;
-  featuredSpeakers.appendChild(feature);
+  featuredSpeakers2.appendChild(feature);
 }

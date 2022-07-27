@@ -1,11 +1,13 @@
 /* base styles */
 @import url("http://fonts.cdnfonts.com/css/cocogoose");
+@import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
 
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
   scroll-behavior: smooth;
+  font-family: "Roboto", sans-serif;
 }
 
 :root {
@@ -63,8 +65,11 @@ header {
   padding: 10% 4% 5% 4%;
   background-image: url(imgs/mobile-background.png);
   background-repeat: no-repeat;
-  background-size: 100% auto;
   overflow-x: hidden;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
 }
 
 .main-section__title {
@@ -109,6 +114,14 @@ header {
   width: 60px;
   border-bottom: 1px solid var(--color-2);
   margin: 0 auto 40px;
+  padding-top: 1rem;
+}
+
+hr {
+  border: none;
+  height: 0.5px;
+  width: 2rem;
+  background-color: var(--color-4);
 }
 
 .main-program {
@@ -158,11 +171,12 @@ header {
 
 .main-program__card-title {
   color: var(--color-2);
+  padding-left: 1rem;
 }
 
 .main-program__card-info {
   color: var(--white);
-  padding-top: 5px;
+  padding: 1rem;
 }
 
 .main-program__join {
@@ -174,11 +188,11 @@ header {
   display: flex;
   flex-direction: column;
   align-items: center;
-  padding: 2rem 0.5rem 0 0.5rem;
+  padding: 2rem 0.5rem 4rem 0.5rem;
 }
 
-.featured-speaker {
-  padding-bottom: 1rem;
+.featured-speaker__item {
+  padding: 2rem;
 }
 
 .featured-speaker__img {
@@ -194,7 +208,7 @@ header {
 
 .fs-role {
   color: var(--color-2);
-  font-size: 14px;
+  font-size: 12px;
   font-weight: 700;
   line-height: 1;
   font-style: italic;
@@ -202,16 +216,22 @@ header {
 }
 
 .fs-description {
+  padding-top: 0.5rem;
   font-size: 13px;
 }
 
 .partners {
   display: flex;
   flex-direction: column;
-  justify-content: center;
   align-items: center;
   background-color: #272a31;
   padding-top: 1rem;
+}
+
+.partners-content {
+  display: grid;
+  grid-template-columns: 180px 180px;
+  grid-template-rows: 2;
 }
 
 .partners__title {
@@ -226,11 +246,15 @@ header {
   max-width: 10rem;
 }
 
+.partners-content__img-airbnb {
+  max-width: 7rem;
+}
+
 .footer {
-  background-color: var(--white);
-  color: #000;
   display: flex;
   align-items: center;
+  background-color: var(--white);
+  color: var(--black);
   margin-top: 25px;
   margin-bottom: 25px;
   gap: 10px;
@@ -304,8 +328,12 @@ header {
 
   .main-section {
     background-image: url(imgs/background.png);
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
     padding: 5% 5% 5% 10%;
-    height: 90vh;
+    height: 100vh;
   }
 
   .main-section__title {
@@ -326,5 +354,98 @@ header {
 
   .date {
     font-size: 2rem;
+  }
+
+  .partners-content {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+  }
+
+  .partners-content__box {
+    padding: 0 3% 2% 3%;
+  }
+
+  .copyright-mobile {
+    display: none;
+  }
+
+  .copyright {
+    display: block;
+    padding: 2rem 3rem 0 3rem;
+    width: 80%;
+  }
+
+  .footer {
+    display: flex;
+    align-items: center;
+    margin-top: 25px;
+    margin-bottom: 25px;
+    gap: 10px;
+  }
+
+  .footer-logo {
+    max-width: 30%;
+    padding-left: 10%;
+  }
+
+  .main-program {
+    padding: 3%;
+  }
+
+  .main-program__cards {
+    display: flex;
+    flex-direction: row;
+    padding: 3%;
+  }
+
+  .main-program__card {
+    flex-direction: column;
+    padding: 2%;
+  }
+
+  .main-program__card-img {
+    max-width: 30%;
+    text-align: center;
+  }
+
+  .main-program__card-title {
+    font-size: 20px;
+  }
+
+  .main-program__card-info {
+    text-align: center;
+  }
+
+  .featured-content {
+    padding: 5rem;
+  }
+
+  .featured-speaker__item {
+    padding: 3rem;
+  }
+
+  .featured-speaker__columns {
+    display: flex;
+    flex-direction: row;
+  }
+
+  .fs-title,
+  .fs-role,
+  .fs-description {
+    width: 70%;
+  }
+
+  .fs-role {
+    font-size: 15px;
+  }
+
+  .fs-title {
+    font-size: 20px;
+    padding-top: 1rem;
+  }
+
+  .fs-description {
+    font-size: 15px;
   }
 }
