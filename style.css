@@ -309,6 +309,90 @@ hr {
   display: none;
 }
 
+.about-section {
+  padding: 10% 4% 5% 4%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  background-image: url(imgs/about-background.png);
+  background-color: #f7f7f7f5;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.about-section__quote {
+  font-size: 1rem;
+  padding: 0.5rem;
+  color: var(--color-2);
+}
+
+.about-section__title {
+  font-family: "COCOGOOSE", sans-serif;
+  font-size: 2.5rem;
+  background: linear-gradient(to right, #ff8800f5 0%, #ec5242 100%);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.about-section__description {
+  background: #fff;
+  padding: 1rem;
+  border: 1px solid #ccc;
+}
+
+.about-section__description .description {
+  display: none;
+}
+
+.about-section__contact {
+  color: var(--black);
+  padding: 2rem 0 1rem 0;
+}
+
+.about-email {
+  color: var(--black);
+}
+
+.about-logo {
+  display: flex;
+  flex-direction: column;
+  padding: 3rem 1rem 1rem 1rem;
+  text-align: center;
+  border-bottom: 1px solid #ccc;
+}
+
+.about-logo__decription {
+  display: none;
+}
+
+.about-logo__container {
+  border: 1px solid #ccc;
+  padding: 1rem;
+  margin: 3rem 0 4rem 0;
+}
+
+.about-logo__logo {
+  max-width: 20rem;
+}
+
+.events {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  padding: 4rem 2rem 4rem 2rem;
+}
+
+.events__description {
+  display: none;
+}
+
+.past-event {
+  padding: 3rem 0 1rem 0;
+  max-width: 90%;
+}
+
 /* desktop styles */
 @media screen and (min-width: 768px) {
   .logo {
@@ -491,5 +575,46 @@ hr {
 
   .fs-description {
     font-size: 15px;
+  }
+
+  .about-section {
+    padding-top: 5rem;
+  }
+
+  .about-section__quote {
+    font-size: 1.5rem;
+  }
+
+  .about-section__title {
+    font-size: 4.5rem;
+  }
+
+  .about-section__description {
+    width: 70%;
+    line-height: 30px;
+  }
+
+  .about-section__description .description {
+    display: block;
+  }
+
+  .about-section__description .mobile-description {
+    display: none;
+  }
+
+  .about-logo__container {
+    width: 30rem;
+    padding: 2rem;
+  }
+
+  .about-logo {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 5rem 0 5rem 0;
+  }
+
+  .partners-about {
+    display: none;
   }
 }
