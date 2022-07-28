@@ -39,7 +39,8 @@ Give a ⭐️ if you like this project!
 
 ## Acknowledgments
 
-[Design by Cindy Shin on Behance](https://www.behance.net/gallery/29845175/CC-Global-Summit-2015)
+- [Design by Cindy Shin on Behance](https://www.behance.net/gallery/29845175/CC-Global-Summit-2015)
+- [Creative Commons license of the design](https://creativecommons.org/licenses/by-nc/4.0/)
 
 ## 📝 License
 
