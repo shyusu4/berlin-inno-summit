@@ -587,6 +587,10 @@ hr {
     padding-top: 1rem;
   }
 
+  .footer-logo-white {
+    display: block;
+  }
+
   .fs-description {
     font-size: 15px;
   }
@@ -649,10 +653,6 @@ hr {
     background-color: var(--color-1);
     margin: 0;
     padding: 3rem;
-  }
-
-  .footer-logo-white {
-    display: block;
   }
 
   .copyright-white-text {
