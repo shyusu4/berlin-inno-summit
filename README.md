@@ -1,7 +1,8 @@
+![](https://img.shields.io/badge/Microverse-blueviolet)
 # Berlin Innovation Summit 2022
 HTML/CSS &amp; JavaScript capstone project.
 
-This website was built as a part of the Microverse program. It uses the DOM while implementing object arrays and event listeners. It is made up of a home page and about page.
+> This website was built as a part of the Microverse program. It uses the DOM while implementing object arrays and event listeners. It is made up of a home page and about page.
 
 ## Live Demo
 
