@@ -2,11 +2,11 @@
 # Berlin Innovation Summit 2022
 HTML/CSS &amp; JavaScript capstone project.
 
-> This website was built as a part of the Microverse program. It uses the DOM while implementing object arrays and event listeners. It is made up of a home page and about page.
+> This website was built as a part of final week for the Microverse program CSS/HTML module. It uses the DOM while implementing object arrays and event listeners, and is made up of a home page and about page. The project is personalized based on Cindy Shin's design.
 
 ## Live Demo
 
-- [Live](https://shyusu4.github.io/Capstone-Project1/)
+[Live](https://shyusu4.github.io/Capstone-Project1/)
 
 ## Built with
 
