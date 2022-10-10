@@ -2,6 +2,10 @@
 # Berlin Innovation Summit 2022
 > This website was built as a part of the final week for the Microverse program CSS/HTML module. It uses the DOM while implementing object arrays and event listeners, and is made up of a home page and about page. The project is personalized based on Cindy Shin's design.
 
+## Preview
+
+![Website preview](./mockup.png)
+
 ## Live Demo
 
 [Live](https://shyusu4.github.io/Berlin-Inno-Summit/)
@@ -25,7 +29,8 @@
 👤 Shakhrizoda Yusupova
 
 - GitHub: [@shyusu4](https://github.com/shyusu4)
-- LinkedIn: [Shakhrizoda Yusupova](https://www.linkedin.com/in/shakhrizoda-yusupova-789253229/?originalSubdomain=uz)
+- Twitter: [@shyusu4](https://twitter.com/shyusu4)
+- LinkedIn: [Shakhrizoda Yusupova](https://www.linkedin.com/in/shyusu4/)
 
 ## 🤝 Contributing
 Contributions, issues, and feature requests are welcome!
